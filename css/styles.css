@@ -1,0 +1,174 @@
+.conteneurPage {
+    grid-template-areas:
+        "header header header"
+        "main main aside"
+        "main main aside"
+        "footer footer footer";
+}
+
+.grille{
+    display: grid;
+    margin: 0%;
+    width: 100vw;
+    grid-template-columns: 2fr 6fr 3fr;
+    grid-template-rows: fit-content(10%) 3fr 8fr fit-content(10%);
+}
+
+#conteneurKb2{
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+}
+
+#imgOiseau{
+    grid-area: figure;
+    opacity: 0.5;
+    padding: 5%;
+}
+
+#imgLivres{
+    grid-area: para3;
+    padding: 5%;
+}
+
+#imgOiseau:hover{
+    opacity: 1;
+}
+
+#imgLivres:hover{
+    opacity: 0.5;
+}
+
+.grilleArticle{
+    display: grid;
+    width: auto;
+    grid-template-columns: 4fr 4fr;
+    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-areas: 
+        "titre titre"
+        "para1 para2"
+        "figure para3";
+}
+
+header {
+    background-color: black;
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 5fr repeat(3, 1fr);
+}
+
+aside {
+    grid-area: aside;
+}
+
+#asideRayman{
+    background-color: deepskyblue;
+}
+
+footer {
+    background-color: darkcyan;
+    grid-area: footer;
+}
+
+li {
+    padding: 5px;
+}
+
+h2 {
+    padding: 10px;
+}
+
+article>h1{
+    grid-area: titre;
+}
+
+a>div {
+    display: inline-block;
+    padding: 5%;
+}
+
+nav>a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 42, 255);
+}
+
+img {
+    max-width: 350px;
+    margin: auto;
+}
+
+figure {
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    width: fit-content;
+    float: left;
+    grid-area: figure;
+}
+
+.padGauche{
+    padding-left: 5%;
+}
+
+.padDroit{
+    padding-right: 5%;
+}
+
+#kb2P{
+    grid-column: 6 / 7;
+}
+
+.lSource{
+    text-decoration: none;
+}
+
+.couleurAqua
+{
+    color: aqua;
+}
+
+.italique{
+    font-style: italic;
+}
+
+article>p{
+    padding: 6%;
+    display: inline-block;
+}
+
+#pointLums{
+    list-style-image: url('/images/Lums.png');
+}
+
+#para1{
+    grid-area: para1;
+}
+
+#para2{
+    grid-area: para2;
+}
+
+#para3{
+    grid-area: para3;
+}
+
+#asideKeflings{
+    background-color:darkseagreen;
+}
+
+h4{
+    float: right;
+}
